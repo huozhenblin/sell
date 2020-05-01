@@ -14,4 +14,9 @@ public class SellException extends RuntimeException {
         super(resultEnmu.getMessage());
         this.code = resultEnmu.getCode();
     }
+
+    public SellException(Integer code,String message) {
+        super(message);
+        this.code = code;
+    }
 }
